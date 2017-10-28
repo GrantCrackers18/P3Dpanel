@@ -1,0 +1,98 @@
+<Gauge Name="MJC8Q400_Door" Version="1.0">
+<Image Name="majestic_doorbase.bmp"/>
+<Size X="408" Y="190"/>
+
+  <Element>
+    <Position X="45" Y="33"/>
+    <Select>
+      <Value>(A:EXIT OPEN:0, bool) </Value>
+      <Case Value="0">
+         <Image Name="majestic_sw_close.bmp"/>
+      </Case>
+      <Case Value="1">
+         <Image Name="majestic_sw_open.bmp"/>
+      </Case>
+    </Select>
+  </Element>
+
+  <Element>
+    <Position X="132" Y="33"/>
+    <Select>
+      <Value>(A:EXIT OPEN:1, bool) </Value>
+      <Case Value="0">
+         <Image Name="majestic_sw_close.bmp"/>
+      </Case>
+      <Case Value="1">
+         <Image Name="majestic_sw_open.bmp"/>
+      </Case>
+    </Select>
+  </Element>
+
+  <Element>
+    <Position X="222" Y="33"/>
+    <Select>
+      <Value>(A:EXIT OPEN:2, bool) </Value>
+      <Case Value="0">
+         <Image Name="majestic_sw_close.bmp"/>
+      </Case>
+      <Case Value="1">
+         <Image Name="majestic_sw_open.bmp"/>
+      </Case>
+    </Select>
+  </Element>
+
+  <Element>
+    <Position X="308" Y="33"/>
+    <Select>
+      <Value>(A:EXIT OPEN:3, bool) </Value>
+      <Case Value="0">
+         <Image Name="majestic_sw_close.bmp"/>
+      </Case>
+      <Case Value="1">
+         <Image Name="majestic_sw_open.bmp"/>
+      </Case>
+    </Select>
+  </Element>
+  
+  
+  <Mouse>
+    <Area Left="45" Top="33" Width="55" Height="55">
+      <Tooltip>Shift+e 1</Tooltip>
+        <Cursor Type="Hand"/>
+        <Click>
+          (&gt;K:TOGGLE_AIRCRAFT_EXIT, bool)
+          (&gt;K:SELECT_1, bool)
+        </Click>
+    </Area>
+    
+    <Area Left="132" Top="33" Width="55" Height="55">
+      <Tooltip>Shift+e 2</Tooltip>
+        <Cursor Type="Hand"/>
+        <Click>
+          (&gt;K:TOGGLE_AIRCRAFT_EXIT, bool)
+          (&gt;K:SELECT_2, bool)
+        </Click>
+    </Area>
+
+    <Area Left="222" Top="33" Width="55" Height="55">
+      <Tooltip>Shift+e 3</Tooltip>
+        <Cursor Type="Hand"/>
+        <Click>
+          (&gt;K:TOGGLE_AIRCRAFT_EXIT, bool)
+          (&gt;K:SELECT_3, bool)
+        </Click>
+    </Area>
+    
+    <Area Left="308" Top="33" Width="55" Height="55">
+      <Tooltip>Shift+e 4 </Tooltip>
+        <Cursor Type="Hand"/>
+        <Click>
+          (&gt;K:TOGGLE_AIRCRAFT_EXIT, bool)
+          (&gt;K:SELECT_4, bool)
+        </Click>
+    </Area>
+	
+	
+  </Mouse>
+</Gauge>
+ 

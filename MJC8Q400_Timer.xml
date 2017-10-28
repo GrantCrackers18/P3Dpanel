@@ -1,0 +1,34 @@
+<Gauge Name="MJC8Q400_Timer" Version="1.0">
+<copyright>(c)2014 virtual Pilot</copyright>
+
+<Size X="20" Y="20"/>
+<Element>
+<Select>
+<Value> 
+(L:MJC_EEXIT_SW,bool) 0 == if{
+    (L:MJC_EEXIT,number) 0 &gt; if{
+        (L:MJC_EEXIT,number) 1 - (>L:MJC_EEXIT,number)
+    }
+}
+els{
+    (L:MJC_EEXIT,number) 100 &lt; if{
+        (L:MJC_EEXIT,number) 1 + (>L:MJC_EEXIT,number)
+    }
+}
+
+
+(L:MJC_FEXIT_SW,bool) 0 == if{
+    (L:MJC_FEXIT,number) 0 &gt; if{
+        (L:MJC_FEXIT,number) 1 - (>L:MJC_FEXIT,number)
+    }
+}
+els{
+    (L:MJC_FEXIT,number) 100 &lt; if{
+        (L:MJC_FEXIT,number) 1 + (>L:MJC_FEXIT,number)
+    }
+}
+
+</Value>
+</Select>
+</Element>  
+</Gauge>
